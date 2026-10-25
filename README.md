@@ -27,3 +27,5 @@ node generate-sample.js
 
 ## License
 MIT
+## Pairs with
+**[Billable Hours Tracker](https://github.com/moneyhoneypot98-star/billable-hours-tracker)** — track hours in the terminal, export invoice-ready JSON, pipe it straight into this tool.
