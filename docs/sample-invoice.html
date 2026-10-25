@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Invoice INV-TEST-001</title>
+<style>
+  body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #333; max-width: 800px; margin: 0 auto; padding: 40px; }
+  .header { display: flex; justify-content: space-between; border-bottom: 2px solid #333; padding-bottom: 20px; margin-bottom: 40px; }
+  .company h1 { margin: 0 0 8px; color: #2c3e50; }
+  .company p, .invoice-info p { margin: 4px 0; color: #666; }
+  .invoice-info { text-align: right; }
+  .invoice-info h2 { margin: 0 0 8px; color: #e74c3c; }
+  .client-info { margin-bottom: 30px; }
+  .client-info h3 { margin: 0 0 8px; color: #2c3e50; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+  th { background: #ecf0f1; padding: 12px 15px; text-align: left; font-size: 12px; text-transform: uppercase; color: #7f8c8d; border-bottom: 2px solid #ddd; }
+  td { padding: 12px 15px; border-bottom: 1px solid #eee; }
+  .r { text-align: right; }
+  .totals { width: 250px; margin-left: auto; }
+  .row { display: flex; justify-content: space-between; padding: 8px 0; }
+  .grand { font-size: 18px; font-weight: bold; border-top: 2px solid #333; padding-top: 15px; }
+  .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; color: #7f8c8d; font-size: 12px; text-align: center; }
+  @media print { body { margin: 0; padding: 20px; } }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="company">
+      <h1>Acme LLC</h1>
+      <p>123 Main St, New York, NY 10001</p>
+      <p>billing@acme.com</p>
+    </div>
+    <div class="invoice-info">
+      <h2>INVOICE</h2>
+      <p><strong>INV-TEST-001</strong></p>
+      <p>Date: 10/25/2026</p>
+      <p>Due: 2026-11-24</p>
+    </div>
+  </div>
+
+  <div class="client-info">
+    <h3>Bill To:</h3>
+    <p>Jane Smith</p>
+    <p>456 Oak Ave, Brooklyn, NY 11201</p>
+    <p>jane@client.com</p>
+  </div>
+
+  <table>
+    <tr><th>Description</th><th>Quantity</th><th>Rate</th><th class="r">Amount</th></tr>
+    <tr><td>Website design</td><td>1</td><td>$500.00</td><td class="r">$500.00</td></tr>
+    <tr><td>Bug fixes</td><td>3</td><td>$150.00</td><td class="r">$450.00</td></tr>
+  </table>
+
+  <div class="totals">
+    <div class="row"><span>Subtotal:</span><span>$950.00</span></div>
+    <div class="row"><span>Tax (8.25%):</span><span>$78.38</span></div>
+    <div class="row grand"><span>Total Due:</span><span>$1028.38</span></div>
+  </div>
+
+  <div class="footer"><p>Thank you for your business!</p></div>
+</body>
+</html>
