@@ -1,0 +1,19 @@
+{
+  "name": "invoice-generator",
+  "version": "1.0.0",
+  "description": "Professional invoice generator that creates PDF-ready HTML invoices.",
+  "main": "invoice.js",
+  "scripts": {
+    "start": "node invoice.js",
+    "sample": "node generate-sample.js"
+  },
+  "keywords": [
+    "invoice",
+    "professional",
+    "business",
+    "pdf",
+    "generator"
+  ],
+  "author": "Invoice Generator",
+  "license": "MIT"
+}

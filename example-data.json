@@ -1,0 +1,15 @@
+{
+  "company": "Acme LLC",
+  "companyAddr": "123 Main St, New York, NY 10001",
+  "companyEmail": "billing@acme.com",
+  "clientName": "Jane Smith",
+  "clientAddr": "456 Oak Ave, Brooklyn, NY 11201",
+  "clientEmail": "jane@client.com",
+  "invoiceNum": "INV-TEST-001",
+  "dueDate": "2026-11-24",
+  "items": [
+    { "desc": "Website design", "qty": 1, "rate": 500 },
+    { "desc": "Bug fixes", "qty": 3, "rate": 150 }
+  ],
+  "taxRate": 8.25
+}
